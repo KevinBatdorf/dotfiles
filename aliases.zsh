@@ -1,57 +1,84 @@
-# Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
-alias reloadcli="source $HOME/.zshrc"
-alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -ahlF --color --group-directories-first"
-weather() { curl -4 wttr.in/${1:-antwerp} }
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias c="clear"
-alias zbundle="antibody bundle < $DOTFILES/zsh_plugins.txt > $DOTFILES/zsh_plugins.sh"
 
-# Directories
-alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
+# mkdir and go into it
+mkcd() { mkdir -p "$*";cd "$*";}
 
-# Laravel
-alias a="php artisan"
-alias ams="php artisan migrate:fresh --seed"
+# run vagrant commands via homestead
+function hs() {
+    ( cd ~/Homestead && vagrant $* )
+}
 
-# PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
+# ssh into vagrant
+alias vm="homestead ssh"
 
-# JS
-alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
+alias pstorm="phpstorm"
 
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
+# Lazy Git Commit
+function lg() {
+	git status -s
+	git add .
+	git commit -a -m "$1"
+	git push
+}
 
-# Docker
-alias docker-composer="docker-compose"
-#alias dstop="docker stop $(docker ps -a -q)"
-#alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
-#alias dpurgeimages="docker rmi $(docker images -q)"
-#dbuild() { docker build -t=$1 .; }
-#dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+alias nah="git reset --hard && git clean -df"
 
-# Git
-alias commit="git add . && git commit -m"
-alias gcommit="git add . && git commit"
-alias amend="git commit --amend --no-edit"
-alias amendall="git add . && amend"
-alias wip="commit wip"
-alias gst="git status"
-alias gb="git branch"
-alias gc="git checkout"
-alias gd="git diff"
-alias resolve="git add . && git commit --no-edit"
-alias gl="git log --oneline --decorate --color"
-alias nuke="git clean -df && git reset --hard"
+# Completion for the `wp` command
+autoload bashcompinit
+bashcompinit
+_wp_complete() {
+	local OLD_IFS="$IFS"
+	local cur=${COMP_WORDS[COMP_CWORD]}
+
+	IFS=$'\n';  # want to preserve spaces at the end
+	local opts="$(wp cli completions --line="$COMP_LINE" --point="$COMP_POINT")"
+
+	if [[ "$opts" =~ \<file\>\s* ]]
+	then
+		COMPREPLY=( $(compgen -f -- $cur) )
+	elif [[ $opts = "" ]]
+	then
+		COMPREPLY=( $(compgen -f -- $cur) )
+	else
+		COMPREPLY=( ${opts[*]} )
+	fi
+
+	IFS="$OLD_IFS"
+	return 0
+}
+complete -o nospace -F _wp_complete wp
+
+# rsync shortcut
+function rs() {
+  rsync -avz -e ssh $1 $2
+}
+
+# Dump homestead databases
+alias dumpdb="mysqldump -u homestead -psecret --all-databases > ~/code/homestead.sql"
+alias loaddb="mysql -u homestead -psecret < ~/code/homestead.sql"
+
+alias python='python3'
+alias pip='pip3'
+alias phpunit='vendor/bin/phpunit'
+
+# https://remysharp.com/2018/08/23/cli-improved
+alias cat='bat' # syntax hightlighting cat
+alias ping='prettyping --nolegend' #better ping
+alias top="sudo htop" # alias top and fix high sierra bug
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules" # view file sizes
+alias help='tldr' # better man pages
+
+# Home brew
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+
+# Fuzzy back searching
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+export PATH="/usr/local/sbin:$PATH"
+
+# Database
+alias dbstart='/usr/local/bin/mysql.server start'
+alias dbstop='/usr/local/bin/mysql.server stop'
+alias dbrestart='/usr/local/bin/mysql.server restart'
