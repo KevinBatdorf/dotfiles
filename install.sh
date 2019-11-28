@@ -31,13 +31,8 @@ rm -rf $HOME/.zshrc
 ln -s $HOME/code/dotfiles/.zshrc $HOME/.zshrc
 
 # git
-git config --global user.name "Kevin Batdorf"
-git config --global user.email "kbat82@gmail.com"
-git config --global core.autocrlf false
-git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX" # https://github.com/so-fancy/diff-so-fancy
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/code/dotfiles/.gitignore_global $HOME/.gitignore_global
-git config --global core.excludesfile $HOME/.gitignore_global
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/code/dotfiles/.mackup.cfg $HOME/.mackup.cfg
