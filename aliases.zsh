@@ -78,6 +78,6 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 export PATH="/usr/local/sbin:$PATH"
 
 # Database
-alias dbstart='/usr/local/bin/mysql.server start'
-alias dbstop='/usr/local/bin/mysql.server stop'
-alias dbrestart='/usr/local/bin/mysql.server restart'
+alias dbstart='brew services start mysql'
+alias dbstop='brew services stop mysql'
+alias dbrestart='brew services restart mysql'
