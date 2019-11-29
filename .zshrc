@@ -14,16 +14,12 @@ ZSH_THEME=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 plugins=(
   git
   history
   colorize
   wd
   HTTPie
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 # Do not record an event starting with a space
@@ -50,3 +46,7 @@ export LANG=en_US.UTF-8
 # load pure prompt theme
 autoload -U promptinit; promptinit
 prompt pure
+
+# zh enhancements
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
