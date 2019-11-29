@@ -61,8 +61,6 @@ alias pip='pip3'
 alias phpunit='vendor/bin/phpunit'
 
 # https://remysharp.com/2018/08/23/cli-improved
-alias cat='bat' # syntax hightlighting cat
-alias catold='cat' # oldcat cat
 alias ping='prettyping --nolegend' #better ping
 alias top="sudo htop" # alias top and fix high sierra bug
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules" # view file sizes
