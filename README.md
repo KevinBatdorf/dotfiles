@@ -26,8 +26,9 @@ If you did all of the above you may now follow these install instructions to set
 1. Install macOS Command Line Tools by running `xcode-select --install`
 1. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
 1. Clone this repo to `~/code/dotfiles`
+1. Run `chsh -s /bin/zsh` to switch the shell to zsh
 1. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
-1. Run `install.sh` to start the installation
+1. Run `sh install.sh` to start the installation
 1. After mackup is synced to Dropbox, restore preferences by running `mackup restore`
 1. Restart your computer to finalize the process
 

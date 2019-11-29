@@ -30,6 +30,8 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'wp-cli' # WordPress cli
 brew 'zlib' # Needed for Memcached
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
 
 # Development
 brew 'php'
