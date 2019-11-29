@@ -31,6 +31,7 @@ If you did all of the above you may now follow these install instructions to set
 1. Run `sh install.sh` to start the installation
 1. After mackup is synced to Dropbox, restore preferences by running `mackup restore`
 1. Restart your computer to finalize the process
+1. If you need mysql, run `brew install mysql` manually
 
 Your Mac is now ready to use!
 
