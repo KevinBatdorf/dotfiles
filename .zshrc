@@ -1,5 +1,4 @@
 # Path to your dotfiles.
-# Path to your dotfiles.
 export DOTFILES=$HOME/code/dotfiles
 
 # Path to your oh-my-zsh installation.
@@ -35,6 +34,9 @@ setopt INC_APPEND_HISTORY
 
 # Auto changes to a directory without typing "cd"
 setopt AUTO_CD
+
+# Would you like to use another custom folder than $ZSH/custom?
+ZSH_CUSTOM=$DOTFILES
 
 source $ZSH/oh-my-zsh.sh
 
