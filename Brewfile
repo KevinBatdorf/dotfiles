@@ -1,6 +1,5 @@
 # Taps
 tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -42,6 +41,7 @@ brew 'node'
 brew 'python'
 brew 'redis'
 brew 'yarn'
+brew 'starship'
 
 # Apps
 cask 'aerial'

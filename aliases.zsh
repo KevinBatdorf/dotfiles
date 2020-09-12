@@ -77,7 +77,6 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 export PATH="/usr/local/sbin:$PATH"
 
-# Database
-alias dbstart='brew services start mysql'
-alias dbstop='brew services stop mysql'
-alias dbrestart='brew services restart mysql'
+export CYPRESS_TESTING_KEY="f2cc55-04e147-ace600-ef96cd-1d3f7f"
+
+eval "$(starship init zsh)"

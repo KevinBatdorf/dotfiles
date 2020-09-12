@@ -50,3 +50,6 @@ prompt pure
 # zh enhancements
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Starship
+eval "$(starship init zsh)"
