@@ -35,13 +35,14 @@ brew 'zsh-syntax-highlighting'
 # Development
 brew 'php'
 brew 'composer'
+brew 'gh'
 brew 'imagemagick'
 brew 'nginx'
 brew 'node'
 brew 'python'
 brew 'redis'
-brew 'yarn'
 brew 'starship'
+brew 'yarn'
 
 # Apps
 cask 'aerial'
