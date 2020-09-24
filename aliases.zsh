@@ -16,7 +16,7 @@ alias pstorm="phpstorm"
 function lg() {
 	git status -s
 	git add .
-	git commit -a -m "$1"
+	git commit -a -m "${1:-'wip'}"
 	git push
 }
 
