@@ -91,7 +91,6 @@ cask 'font-fira-code'
 mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Lightshot Screenshot', id: 526298438
-mas 'Plash', id: 1494023538
 mas 'Trello', id: 1278508951
 mas 'Tweetbot', id: 1384080005
 mas 'WireGuard', id: 1451685025
