@@ -6,6 +6,7 @@ tap 'homebrew/bundle'
 
 # Binaries
 brew 'ack' # grep https://beyondgrep.com/
+brew 'act' # GitHub Actions https://github.com/nektos/act
 brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
