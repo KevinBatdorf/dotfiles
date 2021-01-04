@@ -2,6 +2,14 @@
 
 echo "Setting up your Mac..."
 
+if test ! $(which rustc); then
+  echo "Installing rust..."
+  curl https://sh.rustup.rs -sSf | sh
+fi
+
+# update version
+rustup update
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
