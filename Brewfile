@@ -98,3 +98,4 @@ mas 'WireGuard', id: 1451685025
 mas 'Flycut', id: 442160987
 mas 'Noizio', id: 928871589
 mas 'Bear', id: 1016366447
+mas 'Daisy Disk', id: 411643860
