@@ -95,3 +95,4 @@ mas 'Lightshot Screenshot', id: 526298438
 mas 'Trello', id: 1278508951
 mas 'Tweetbot', id: 1384080005
 mas 'WireGuard', id: 1451685025
+mas 'Flycut', id: 442160987
