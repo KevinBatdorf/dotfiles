@@ -24,6 +24,7 @@ brew 'lastpass-cli'
 brew 'mackup'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
 brew 'mas' # Mac App Store manager
+brew 'fnm' # Node version switcher
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'trash' # Manage the Trash bin

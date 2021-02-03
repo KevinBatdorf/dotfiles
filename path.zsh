@@ -1,10 +1,6 @@
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 export PATH=/usr/local/bin:$PATH
 
-# This loads nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 # Composer stuff
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 

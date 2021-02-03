@@ -58,3 +58,6 @@ source "$HOME/.secrets"
 
 # Starship
 eval "$(starship init zsh)"
+
+# FNM
+eval "$(fnm env)"
