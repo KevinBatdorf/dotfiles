@@ -10,6 +10,7 @@ brew 'act' # GitHub Actions https://github.com/nektos/act
 brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
+brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'diff-so-fancy' # Better diff https://github.com/so-fancy/diff-so-fancy
 brew 'fzf' # Fuzzy finder https://github.com/junegunn/fzf
@@ -29,6 +30,7 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
+brew 'wabt' # Web Assembly
 brew 'wp-cli' # WordPress cli
 brew 'zlib' # Needed for Memcached
 brew 'zsh-autosuggestions'

@@ -66,6 +66,8 @@ alias top="sudo htop" # alias top and fix high sierra bug
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules" # view file sizes
 alias help='tldr' # better man pages
 
+alias rm=trash
+
 # Home brew
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 

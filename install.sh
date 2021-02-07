@@ -32,7 +32,7 @@ pecl install memcached imagick
 $HOME/.composer/vendor/bin/valet install
 
 # Install NPM packages
-yarn global add @vue/cli pure-prompt npm-check-updates
+yarn global add @vue/cli pure-prompt npm-check-updates trash-cli
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the dotfiles
 rm -rf $HOME/.zshrc
