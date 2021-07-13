@@ -23,8 +23,6 @@ function lg() {
 alias nah="git reset --hard && git clean -df"
 
 # Completion for the `wp` command
-autoload bashcompinit
-bashcompinit
 _wp_complete() {
 	local OLD_IFS="$IFS"
 	local cur=${COMP_WORDS[COMP_CWORD]}
