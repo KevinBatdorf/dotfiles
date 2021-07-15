@@ -10,5 +10,8 @@ export PATH="$PATH:$HOME/code/spark-installer"
 # Load Node global installed binaries
 export PATH="$HOME/.node/bin:$PATH"
 
+# Load Node global installed binaries
+export PATH="$HOME/.deno/bin:$PATH"
+
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"

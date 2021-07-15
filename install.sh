@@ -53,8 +53,8 @@ rm -rf $HOME/.zshrc
 ln -s $HOME/code/dotfiles/.zshrc $HOME/.zshrc
 
 # Add deno completions
-mkdir ~/.zsh
-deno completions zsh > ~/.zsh/_deno
+mkdir $HOME/.zsh
+deno completions zsh > $HOME/.zsh/_deno
 
 # Removes .vimrc from $HOME (if it exists) and symlinks the .vimrc file from the dotfiles
 rm -rf $HOME/.vimrc
