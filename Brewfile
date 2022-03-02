@@ -18,6 +18,8 @@ brew 'fd' # Better find https://github.com/sharkdp/fd
 brew 'git'
 brew 'gnupg2'
 brew 'grep'
+brew 'gawk'
+brew 'gsed'
 brew 'htop' # https://formulae.brew.sh/formula/htop
 brew 'httpie'
 brew 'hub'
@@ -56,29 +58,21 @@ brew 'yarn'
 
 # Apps
 cask 'aerial'
-cask 'alfred'
 cask 'blender'
 cask 'discord'
 cask 'docker'
-cask 'dropbox'
 cask 'firefox'
-cask 'github'
 cask 'godot'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'insomnia'
 cask 'iterm2'
 cask 'java'
 cask 'jetbrains-toolbox'
-cask 'karabiner-elements'
-cask 'marshallofsound-google-play-music-player'
 cask 'messenger'
 cask 'sip'
 cask 'slack'
 cask 'tableplus'
 cask 'telegram-desktop'
 cask 'the-unarchiver'
-cask 'toggl'
 cask 'tor-browser'
 cask 'transmission'
 cask 'transmit'
@@ -97,13 +91,9 @@ cask 'font-fira-code'
 
 # Mac App Store
 # mas 'Byword', id: 420212497
-mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Lightshot Screenshot', id: 526298438
 mas 'Trello', id: 1278508951
-mas 'Tweetbot', id: 1384080005
 mas 'WireGuard', id: 1451685025
-mas 'Flycut', id: 442160987
-mas 'Noizio', id: 928871589
 mas 'Bear', id: 1016366447
 mas 'Daisy Disk', id: 411643860

@@ -66,6 +66,20 @@ alias help='tldr' # better man pages
 
 alias rm=trash
 
+alias sed='gsed'
+alias awk='gawk'
+alias grep='ggrep'
+alias head='ghead'
+alias mktemp='gmktemp'
+alias date='gdate'
+alias cut='gcut'
+alias tr='gtr'
+alias cat='gcat'
+alias sort='gsort'
+alias kill='gkill'
+alias base64='gbase64'
+alias pr='gpr'
+
 # Home brew
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
