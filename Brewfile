@@ -13,6 +13,7 @@ brew 'bat' # "cat" on steroids
 brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'diff-so-fancy' # Better diff https://github.com/so-fancy/diff-so-fancy
+brew 'duf' # better df https://github.com/muesli/duf
 brew 'fzf' # Fuzzy finder https://github.com/junegunn/fzf
 brew 'fd' # Better find https://github.com/sharkdp/fd
 brew 'git'
@@ -23,7 +24,7 @@ brew 'gsed'
 brew 'htop' # https://formulae.brew.sh/formula/htop
 brew 'httpie'
 brew 'hub'
-brew 'lastpass-cli'
+brew 'jq'
 brew 'mackup'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
 brew 'mas' # Mac App Store manager
@@ -32,6 +33,8 @@ brew 'fnm' # Node version switcher
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'redis'
+brew 'sd' # sed alternative https://github.com/chmln/sd
+brew 'thefuck' # https://github.com/nvbn/thefuck
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'wabt' # Web Assembly
