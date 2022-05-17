@@ -20,10 +20,10 @@ ZSH_THEME=""
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  git-flow
+#   git
   history
   colorize
   wd
@@ -94,3 +94,5 @@ _fnm_autoload_hook () {
 }
 add-zsh-hook chpwd _fnm_autoload_hook \
     && _fnm_autoload_hook
+
+eval "$(zoxide init zsh)"

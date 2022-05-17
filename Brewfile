@@ -14,6 +14,8 @@ brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'diff-so-fancy' # Better diff https://github.com/so-fancy/diff-so-fancy
 brew 'duf' # better df https://github.com/muesli/duf
+brew 'entr' # https://github.com/eradman/entr
+brew 'exa' # ls replacement https://github.com/ogham/exa
 brew 'fzf' # Fuzzy finder https://github.com/junegunn/fzf
 brew 'fd' # Better find https://github.com/sharkdp/fd
 brew 'git'
@@ -25,6 +27,7 @@ brew 'htop' # https://formulae.brew.sh/formula/htop
 brew 'httpie'
 brew 'hub'
 brew 'jq'
+brew 'less'
 brew 'mackup'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
 brew 'mas' # Mac App Store manager
@@ -33,6 +36,7 @@ brew 'fnm' # Node version switcher
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'redis'
+brew 'ripgrep' # https://github.com/BurntSushi/ripgrep
 brew 'sd' # sed alternative https://github.com/chmln/sd
 brew 'thefuck' # https://github.com/nvbn/thefuck
 brew 'trash' # Manage the Trash bin
@@ -42,6 +46,7 @@ brew 'wp-cli' # WordPress cli
 brew 'zlib' # Needed for Memcached
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
+brew 'zoxide'
 
 # Development
 brew 'deno'
@@ -57,6 +62,7 @@ brew 'python'
 brew 'pyenv'
 brew 'redis'
 brew 'starship'
+brew 'wireshark'
 brew 'yarn'
 
 # Apps
@@ -67,6 +73,7 @@ cask 'docker'
 cask 'firefox'
 cask 'godot'
 cask 'google-chrome'
+cask 'http-toolkit'
 cask 'iterm2'
 cask 'java'
 cask 'jetbrains-toolbox'

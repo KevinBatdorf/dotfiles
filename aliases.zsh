@@ -68,24 +68,28 @@ alias rm=trash
 
 alias sed='gsed'
 alias awk='gawk'
-alias grep='ggrep'
+alias grep='rg'
 alias head='ghead'
 alias mktemp='gmktemp'
 alias date='gdate'
 alias cut='gcut'
 alias tr='gtr'
-alias cat='gcat'
+alias cat='bat'
 alias sort='gsort'
 alias kill='gkill'
 alias base64='gbase64'
 alias pr='gpr'
-
+alias cd='z'
+alias cdd='z -'
+alias ls='exa'
+alias la='exa -a'
+alias ll='exa -alh'
 # Home brew
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
 # Fuzzy back searching
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias preview="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
