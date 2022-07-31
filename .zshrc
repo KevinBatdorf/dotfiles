@@ -96,3 +96,6 @@ add-zsh-hook chpwd _fnm_autoload_hook \
     && _fnm_autoload_hook
 
 eval "$(zoxide init zsh)"
+
+export MODDABLE="$HOME/code/iot/moddable"
+export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
