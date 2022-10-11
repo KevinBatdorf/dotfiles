@@ -87,7 +87,7 @@ cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'warm'
-cast 'zoom'
+cask 'zoom'
 
 # Fonts
 cask 'font-lato'
