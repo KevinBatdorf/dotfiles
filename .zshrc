@@ -54,7 +54,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # load pure prompt theme
-fpath+="$(brew --prefix)/opt/homebrew/share/zsh/site-functions"
+fpath+="$(brew --prefix)/share/zsh/site-functions"
 autoload -U promptinit; promptinit
 prompt pure
 
