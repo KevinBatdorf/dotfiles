@@ -44,6 +44,7 @@ brew 'tree' # List directories in a tree structure
 brew 'wabt' # Web Assembly
 brew 'wp-cli' # WordPress cli
 brew 'zlib' # Needed for Memcached
+brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
 brew 'zoxide'
