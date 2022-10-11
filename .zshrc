@@ -72,10 +72,10 @@ eval "$(starship init zsh --print-full-init)"
 # export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 # export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-fi
-eval "$(register-python-argcomplete pipx)"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#     eval "$(pyenv init -)"
+# fi
+# eval "$(register-python-argcomplete pipx)"
 
 # Created by `pipx` on 2021-03-20 22:33:43
 export PATH="$PATH:/Users/kevin/.local/bin"
