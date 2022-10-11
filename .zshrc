@@ -64,7 +64,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$HOME/.secrets"
 
 # Starship
-eval "$(starship init zsh)"
+eval "$(starship init zsh --print-full-init)"
 
 # FNM
 # eval "$(fnm env)"
@@ -99,3 +99,8 @@ eval "$(zoxide init zsh)"
 
 export MODDABLE="$HOME/code/iot/moddable"
 export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
+export EXAMPLES=~/code/iot/iot-product-dev-book
+
+export IDF_PATH=$HOME/esp32/esp-idf
+export UPLOAD_PORT=/dev/cu.usbserial-0001
+# source $IDF_PATH/export.sh

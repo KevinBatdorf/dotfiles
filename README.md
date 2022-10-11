@@ -1,6 +1,6 @@
 # Kevin's Dotfiles
 
-This set of files will restore my Mac to my preferred development state. Heavily inspired by [Dries](https://github.com/driesvints/dotfiles).
+This set of files will restore my Mac to my preferred development state.
 
 ### Before you re-install
 

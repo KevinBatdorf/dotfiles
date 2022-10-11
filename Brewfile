@@ -54,43 +54,40 @@ brew 'rustup'
 brew 'php'
 brew 'composer'
 brew 'gh'
-brew 'git-flow'
 brew 'imagemagick'
 brew 'nginx'
 brew 'node'
 brew 'python'
 brew 'pyenv'
-brew 'redis'
 brew 'starship'
 brew 'wireshark'
-brew 'yarn'
 
 # Apps
-cask 'aerial'
 cask 'blender'
 cask 'discord'
 cask 'docker'
 cask 'firefox'
 cask 'godot'
 cask 'google-chrome'
-cask 'http-toolkit'
+cask 'helo'
 cask 'iterm2'
-cask 'java'
 cask 'jetbrains-toolbox'
-cask 'messenger'
+cask 'nvidia-geforce-now'
+cask 'ray'
+cask 'raycast'
 cask 'sip'
 cask 'slack'
+cask 'spotify'
+cask 'steam'
 cask 'tableplus'
-cask 'telegram-desktop'
+cask 'textual'
+cask 'tinkerwell'
 cask 'the-unarchiver'
-cask 'tor-browser'
-cask 'transmission'
 cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox' # Might need to allow access in Security settings
-cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'warm'
+cast 'zoom'
 
 # Fonts
 cask 'font-lato'
@@ -101,9 +98,4 @@ cask 'font-fira-code'
 
 # Mac App Store
 # mas 'Byword', id: 420212497
-mas 'Keynote', id: 409183694
-mas 'Lightshot Screenshot', id: 526298438
-mas 'Trello', id: 1278508951
-mas 'WireGuard', id: 1451685025
-mas 'Bear', id: 1016366447
 mas 'Daisy Disk', id: 411643860

@@ -97,6 +97,8 @@ export PATH="/usr/local/sbin:$PATH"
 
 export CYPRESS_TESTING_KEY="f2cc55-04e147-ace600-ef96cd-1d3f7f"
 
-eval "$(starship init zsh)"
-
 eval $(thefuck --alias)
+
+# Networking
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"

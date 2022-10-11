@@ -46,7 +46,7 @@ mkdir $HOME/code
 ./clone.sh
 
 # Install NPM packages
-yarn global add @vue/cli pure-prompt npm-check-updates trash-cli
+npm install --global pure-prompt npm-check-updates trash-cli
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the dotfiles
 rm -rf $HOME/.zshrc
