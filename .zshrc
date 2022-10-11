@@ -54,11 +54,11 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # load pure prompt theme
+fpath+="$(brew --prefix)/opt/homebrew/share/zsh/site-functions"
 autoload -U promptinit; promptinit
 prompt pure
 
 # zh enhancements
-fpath+="$(brew --prefix)/opt/homebrew/share/zsh/site-functions"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
