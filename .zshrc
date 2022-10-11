@@ -58,10 +58,11 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # zh enhancements
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -d "/usr/local/share" ]] && hb="/usr/local" || hb="/opt/homebrew"
+source "${hb}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "${hb}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-source "$HOME/.secrets"
+# source "$HOME/.secrets"
 
 # Starship
 eval "$(starship init zsh --print-full-init)"
