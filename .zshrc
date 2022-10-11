@@ -58,9 +58,9 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # zh enhancements
-[[ -d "/usr/local/share" ]] && hb="/usr/local" || hb="/opt/homebrew"
-source "${hb}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "${hb}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fpath+="$(brew --prefix)/opt/homebrew/share/zsh/site-functions"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # source "$HOME/.secrets"
 
