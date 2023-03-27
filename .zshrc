@@ -102,5 +102,9 @@ export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
 export EXAMPLES=~/code/iot/iot-product-dev-book
 
 export IDF_PATH=$HOME/esp32/esp-idf
+
+# https://github.com/Moddable-OpenSource/moddable/blob/public/documentation/devices/esp32.md
+# part 8
 export UPLOAD_PORT=/dev/cu.usbserial-0001
+# part 11
 # source $IDF_PATH/export.sh
