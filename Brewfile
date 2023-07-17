@@ -12,13 +12,13 @@ brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
-brew 'diff-so-fancy' # Better diff https://github.com/so-fancy/diff-so-fancy
 brew 'duf' # better df https://github.com/muesli/duf
 brew 'entr' # https://github.com/eradman/entr
 brew 'exa' # ls replacement https://github.com/ogham/exa
 brew 'fzf' # Fuzzy finder https://github.com/junegunn/fzf
 brew 'fd' # Better find https://github.com/sharkdp/fd
 brew 'git'
+brew 'git-delta' # https://github.com/dandavison/delta
 brew 'gnupg2'
 brew 'grep'
 brew 'gawk'

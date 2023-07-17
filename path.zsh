@@ -12,3 +12,7 @@ export PATH="$HOME/.deno/bin:$PATH"
 
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
+
+#  get python version and put in variable
+PV=$(python3 --version | cut -d " " -f 2 | cut -d "." -f 1-2)
+export PATH="/opt/homebrew/opt/python@${PV}/libexec/bin:$PATH"

@@ -7,7 +7,7 @@ if test ! $(which rustc); then
   curl https://sh.rustup.rs -sSf | sh
 fi
 
-# update version
+# update rust version
 rustup update
 
 # Check for Homebrew and install if we don't have it
@@ -49,7 +49,7 @@ mkdir $HOME/code
 ./clone.sh
 
 # Install NPM packages
-npm install --global npm-check-updates trash-cli
+npm install --global npm-check-updates trash-cli dau
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the dotfiles
 rm -rf $HOME/.zshrc
@@ -66,6 +66,8 @@ ln -s $HOME/code/dotfiles/.vimrc $HOME/.vimrc
 # git
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/code/dotfiles/.gitignore_global $HOME/.gitignore_global
+rm -rf $HOME/.gitconfig
+ln -s $HOME/code/dotfiles/.gitconfig $HOME/.gitconfig
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/code/dotfiles/.mackup.cfg $HOME/.mackup.cfg
