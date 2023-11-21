@@ -2,7 +2,7 @@
 
 # Use custom format
 format = '''
-$directory$nodejs$rust$php
+📁 $directory$nodejs$rust$php
 $git_branch$git_status [⇒](bold green) '''
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -14,7 +14,7 @@ add_newline = false
 format = '[~>]($style) [$symbol$version]($style) '
 
 [nodejs]
-format = '[~>]($style) [🤖 $version]($style) '
+format = '[~>]($style) [Node $version]($style) '
 
 [php]
 format = '[~>]($style) [$symbol$version]($style) '
