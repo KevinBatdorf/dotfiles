@@ -35,7 +35,7 @@ brew 'nvim'
 brew 'fnm' # Node version switcher
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
-brew 'pure' # https://github.com/sindresorhus/pure
+# brew 'pure' # https://github.com/sindresorhus/pure
 brew 'redis'
 brew 'ripgrep' # https://github.com/BurntSushi/ripgrep
 brew 'sd' # sed alternative https://github.com/chmln/sd
@@ -66,7 +66,9 @@ brew 'starship'
 brew 'wireshark'
 
 # Apps
+# cask 'applite'
 cask 'blender'
+cask 'cleanshot'
 cask 'discord'
 cask 'docker'
 cask 'firefox'

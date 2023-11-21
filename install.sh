@@ -55,6 +55,10 @@ npm install --global npm-check-updates trash-cli dau
 rm -rf $HOME/.zshrc
 ln -s $HOME/code/dotfiles/.zshrc $HOME/.zshrc
 
+# Starship
+rm -rf $HOME/.config/starship.toml
+ln -s $HOME/code/dotfiles/starship.toml $HOME/.config/starship.toml
+
 # Add deno completions
 mkdir $HOME/.zsh
 deno completions zsh > $HOME/.zsh/_deno
@@ -70,6 +74,7 @@ rm -rf $HOME/.gitconfig
 ln -s $HOME/code/dotfiles/.gitconfig $HOME/.gitconfig
 
 # Symlink the Mackup config file to the home directory
+rm $HOME/.mackup.cfg
 ln -s $HOME/code/dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences

@@ -1,3 +1,6 @@
+# Starship
+eval "$(starship init zsh --print-full-init)"
+
 # Path to your dotfiles.
 export DOTFILES=$HOME/code/dotfiles
 
@@ -54,17 +57,14 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # load pure prompt theme
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # zh enhancements
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # source "$HOME/.secrets"
-
-# Starship
-eval "$(starship init zsh --print-full-init)"
 
 # FNM
 # eval "$(fnm env)"
