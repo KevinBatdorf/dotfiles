@@ -87,6 +87,9 @@ _fnm_autoload_hook () {
   if [[ -f .node-version && -r .node-version ]]; then
     FNM_USING_LOCAL_VERSION=1
     fnm use --install-if-missing
+  elif [ -f .nvmrc ]; then
+    FNM_USING_LOCAL_VERSION=1
+    fnm use --install-if-missing
   elif [ $FNM_USING_LOCAL_VERSION -eq 1 ]; then
     FNM_USING_LOCAL_VERSION=0
     fnm use default --install-if-missing
