@@ -4,10 +4,10 @@
 
 [core]
 	autocrlf = false
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	# pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /Users/kevin/.gitignore_global
 	ignorecase = false
-	pager = delta
+	# pager = delta
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -35,4 +35,19 @@
     conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+    # colorMoved = default
+    tool = difftastic
+    external = difft
+
+[difftool]
+    prompt = false
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+    difftool = true
+
+[alias]
+    dft = difftool
+    dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"

@@ -30,7 +30,7 @@ plugins=(
   history
   colorize
   wd
-  HTTPie
+#   HTTPie
 )
 
 # Do not record an event starting with a space
@@ -56,13 +56,15 @@ source $HOME/.cargo/env
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# load pure prompt theme
-autoload -U promptinit; promptinit
-prompt pure
 
 # zh enhancements
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# load pure prompt theme
+fpath+=($HOME/.zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
 
 # source "$HOME/.secrets"
 
@@ -104,3 +106,19 @@ eval "$(zoxide init zsh)"
 export PNPM_HOME="/Users/kevin/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+. "$HOME/.cargo/env"
+
+# Add docker to path
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
+# Add rye to path (python stuffz)
+source "$HOME/.rye/env"
+
+# bun completions
+[ -s "/Users/kevin/.bun/_bun" ] && source "/Users/kevin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(gh copilot alias -- zsh)"

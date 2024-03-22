@@ -12,6 +12,7 @@ brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'difftastic' # https://difftastic.wilfred.me.uk/git.html
 brew 'duf' # better df https://github.com/muesli/duf
 brew 'entr' # https://github.com/eradman/entr
 brew 'exa' # ls replacement https://github.com/ogham/exa
