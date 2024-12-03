@@ -34,20 +34,6 @@ pecl install memcached imagick
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet tightenco/takeout beyondcode/expose
 
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/code
-
-# Create sites subdirectories
-# mkdir $HOME/Sites/blade-ui-kit
-# mkdir $HOME/Sites/laravel
-
-# Clone Github repositories
-./clone.sh
-
 # Install NPM packages
 npm install --global npm-check-updates trash-cli dau
 
@@ -55,27 +41,11 @@ npm install --global npm-check-updates trash-cli dau
 rm -rf $HOME/.zshrc
 ln -s $HOME/code/dotfiles/.zshrc $HOME/.zshrc
 
-# Starship
-rm -rf $HOME/.config/starship.toml
-ln -s $HOME/code/dotfiles/starship.toml $HOME/.config/starship.toml
-
-# Add deno completions
-mkdir $HOME/.zsh
-deno completions zsh > $HOME/.zsh/_deno
-
-# Removes .vimrc from $HOME (if it exists) and symlinks the .vimrc file from the dotfiles
-rm -rf $HOME/.vimrc
-ln -s $HOME/code/dotfiles/.vimrc $HOME/.vimrc
-
 # git
 rm -rf $HOME/.gitignore_global
 ln -s $HOME/code/dotfiles/.gitignore_global $HOME/.gitignore_global
 rm -rf $HOME/.gitconfig
 ln -s $HOME/code/dotfiles/.gitconfig $HOME/.gitconfig
-
-# Symlink the Mackup config file to the home directory
-rm $HOME/.mackup.cfg
-ln -s $HOME/code/dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

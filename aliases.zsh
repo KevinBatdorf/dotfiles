@@ -87,7 +87,7 @@ alias rm=trash
 
 alias sed='gsed'
 alias awk='gawk'
-alias grep='rg'
+# alias grep='rg'
 alias head='ghead'
 alias mktemp='gmktemp'
 alias date='gdate'
@@ -115,6 +115,7 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 export PATH="/usr/local/sbin:$PATH"
 
 export CYPRESS_TESTING_KEY="f2cc55-04e147-ace600-ef96cd-1d3f7f"
+export NODE_COMPILE_CACHE=~/.cache/nodejs-compile-cache
 
 eval $(thefuck --alias)
 

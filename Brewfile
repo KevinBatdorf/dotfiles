@@ -31,9 +31,8 @@ brew 'jq'
 brew 'less'
 brew 'mackup'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
-brew 'mas' # Mac App Store manager
 brew 'nvim'
-brew 'fnm' # Node version switcher
+brew 'nvm' # Node version switcher
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'pure' # https://github.com/sindresorhus/pure
@@ -64,7 +63,6 @@ brew 'nginx'
 brew 'node'
 brew 'python'
 brew 'pyenv'
-brew 'starship'
 brew 'wireshark'
 
 # Apps
@@ -76,10 +74,7 @@ cask 'docker'
 cask 'firefox'
 cask 'godot'
 cask 'google-chrome'
-cask 'helo'
 cask 'iterm2'
-cask 'jetbrains-toolbox'
-cask 'nvidia-geforce-now'
 cask 'ray'
 cask 'raycast'
 cask 'sip'

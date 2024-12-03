@@ -1,3 +1,6 @@
+# profiling
+# zmodload zsh/zprof
+
 # Starship
 # eval "$(starship init zsh --print-full-init)"
 
@@ -7,12 +10,20 @@ export DOTFILES=$HOME/code/dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Add custom completion directory to fpath
+fpath=(~/.zsh $fpath)
+
+# Load bash completions
 autoload -U bashcompinit
 bashcompinit
 
-fpath=(~/.zsh $fpath)
+# Load zsh completions
 autoload -Uz compinit
-compinit -u
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -29,8 +40,6 @@ plugins=(
   git
   history
   colorize
-  wd
-#   HTTPie
 )
 
 # Do not record an event starting with a space
@@ -47,6 +56,9 @@ setopt AUTO_CD
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
+
+# Only check for updates on the 1st of the month
+[ "$(date +%d)" = "01" ] && unset DISABLE_AUTO_UPDATE || DISABLE_AUTO_UPDATE="true"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,39 +78,10 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
-# source "$HOME/.secrets"
-
-# FNM
-# eval "$(fnm env)"
-# export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-# export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-
-# if command -v pyenv 1>/dev/null 2>&1; then
-#     eval "$(pyenv init -)"
-# fi
-# eval "$(register-python-argcomplete pipx)"
 
 # Created by `pipx` on 2021-03-20 22:33:43
 export PATH="$PATH:/Users/kevin/.local/bin"
 
-# For auto switching Node versions
-eval "$(fnm env)"
-FNM_USING_LOCAL_VERSION=0
-autoload -U add-zsh-hook
-_fnm_autoload_hook () {
-  if [[ -f .node-version && -r .node-version ]]; then
-    FNM_USING_LOCAL_VERSION=1
-    fnm use --install-if-missing
-  elif [ -f .nvmrc ]; then
-    FNM_USING_LOCAL_VERSION=1
-    fnm use --install-if-missing
-  elif [ $FNM_USING_LOCAL_VERSION -eq 1 ]; then
-    FNM_USING_LOCAL_VERSION=0
-    fnm use default --install-if-missing
-  fi
-}
-add-zsh-hook chpwd _fnm_autoload_hook \
-    && _fnm_autoload_hook
 
 eval "$(zoxide init zsh)"
 
@@ -121,7 +104,7 @@ source "$HOME/.rye/env"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-eval "$(gh copilot alias -- zsh)"
+# eval "$(gh copilot alias -- zsh)"
 
 source "$HOME/.cargo/env"
 . "$HOME/.rye/env"
@@ -130,3 +113,37 @@ source "$HOME/.cargo/env"
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
+
+# c/c++
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export CC=/opt/homebrew/opt/llvm/bin/clang
+export CXX=/opt/homebrew/opt/llvm/bin/clang++
+
+# Herd injected PHP binary.
+export PATH="/Users/kevin/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/82/"
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/81/"
+
+# Herd injected PHP 8.0 configuration.
+export HERD_PHP_80_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/80/"
+
+# Herd injected PHP 7.4 configuration.
+export HERD_PHP_74_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/74/"
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/kevin/Library/Application Support/Herd/config/php/84/"
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/kevin/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
