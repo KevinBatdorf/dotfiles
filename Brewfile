@@ -82,7 +82,6 @@ cask 'the-unarchiver'
 cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
-cask 'warm'
 cask 'zoom'
 
 # Fonts
