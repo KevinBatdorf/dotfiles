@@ -12,7 +12,7 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'difftastic' # https://difftastic.wilfred.me.uk/git.html
 brew 'duf' # better df https://github.com/muesli/duf
 brew 'entr' # https://github.com/eradman/entr
-brew 'exa' # ls replacement https://github.com/ogham/exa
+brew 'eza' # ls replacement https://github.com/ogham/eza
 brew 'fzf' # Fuzzy finder https://github.com/junegunn/fzf
 brew 'fd' # Better find https://github.com/sharkdp/fd
 brew 'git'

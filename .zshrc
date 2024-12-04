@@ -69,7 +69,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-# zh enhancements
+# zsh enhancements
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
@@ -107,7 +107,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # eval "$(gh copilot alias -- zsh)"
 
 source "$HOME/.cargo/env"
-. "$HOME/.rye/env"
 
 # ZVM
 export ZVM_INSTALL="$HOME/.zvm/self"

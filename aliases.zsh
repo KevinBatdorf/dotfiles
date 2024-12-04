@@ -100,9 +100,9 @@ alias base64='gbase64'
 alias pr='gpr'
 alias cd='z'
 alias cdd='z -'
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -alh'
+alias ls='eza'
+alias la='eza -a'
+alias ll='eza -alh'
 # Home brew
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
