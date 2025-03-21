@@ -36,7 +36,6 @@ brew 'pure' # https://github.com/sindresorhus/pure
 brew 'redis'
 brew 'ripgrep' # https://github.com/BurntSushi/ripgrep
 brew 'sd' # sed alternative https://github.com/chmln/sd
-brew 'thefuck' # https://github.com/nvbn/thefuck
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'wabt' # Web Assembly

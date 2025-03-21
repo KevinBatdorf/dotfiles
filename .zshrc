@@ -117,6 +117,7 @@ export PATH="$PATH:$ZVM_INSTALL/"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export CC=/opt/homebrew/opt/llvm/bin/clang
 export CXX=/opt/homebrew/opt/llvm/bin/clang++
+export PATH="$HOME/vcpkg:$PATH"
 
 # Herd injected PHP binary.
 export PATH="/Users/kevin/Library/Application Support/Herd/bin/":$PATH
