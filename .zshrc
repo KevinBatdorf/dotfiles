@@ -119,8 +119,8 @@ export CC=/opt/homebrew/opt/llvm/bin/clang
 export CXX=/opt/homebrew/opt/llvm/bin/clang++
 export PATH="$HOME/vcpkg:$PATH"
 export VCPKG_ROOT="$HOME/vcpkg"
-export CPATH="/opt/homebrew/include"
-export LIBRARY_PATH="/opt/homebrew/lib"
+export CPATH="/opt/homebrew/include:$CPATH"
+export LIBRARY_PATH="/opt/homebrew/lib:$LIBRARY_PATH"
 
 # Herd injected PHP binary.
 export PATH="/Users/kevin/Library/Application Support/Herd/bin/":$PATH
