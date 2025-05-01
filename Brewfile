@@ -3,6 +3,7 @@ brew 'ack' # grep https://beyondgrep.com/
 brew 'act' # GitHub Actions https://github.com/nektos/act
 brew 'awscli'
 brew 'bash' # Latest Bash version
+brew 'bitwarden'
 brew 'bat' # "cat" on steroids
 brew 'cmake'
 brew 'coreutils' # Those that come with macOS are outdated
