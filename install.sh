@@ -15,11 +15,8 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Update Homebrew recipes
+# Homebrew
 brew update
-
-# Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle
 
 # Make ZSH the default shell environment

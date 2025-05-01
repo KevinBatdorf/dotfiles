@@ -26,7 +26,6 @@ brew 'httpie'
 brew 'hub'
 brew 'jq'
 brew 'less'
-brew 'mackup'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
 brew 'nvim'
 brew 'nvm' # Node version switcher
