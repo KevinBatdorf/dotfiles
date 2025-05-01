@@ -1,6 +1,3 @@
-# Taps
-tap 'homebrew/bundle'
-
 # Binaries
 brew 'ack' # grep https://beyondgrep.com/
 brew 'act' # GitHub Actions https://github.com/nektos/act
