@@ -22,9 +22,6 @@ brew bundle
 # Make ZSH the default shell environment
 sudo dscl . -create /Users/$USER UserShell "$(brew --prefix)/bin/zsh"
 
-# Set default MySQL root password and auth type.
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
-
 # Install PHP extensions with PECL
 pecl install memcached imagick
 
