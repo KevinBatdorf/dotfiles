@@ -32,7 +32,7 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 pecl install memcached imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet tightenco/takeout beyondcode/expose
+/usr/local/bin/composer global require laravel/installer
 
 # Install NPM packages
 npm install --global npm-check-updates trash-cli dau
