@@ -2,16 +2,6 @@
 # mkdir and go into it
 mkcd() { mkdir -p "$*";cd "$*";}
 
-# run vagrant commands via homestead
-function hs() {
-    ( cd ~/Homestead && vagrant $* )
-}
-
-# ssh into vagrant
-alias vm="homestead ssh"
-
-alias pstorm="phpstorm"
-
 # Lazy Git Commit
 function lg() {
 	git status -s
@@ -64,14 +54,14 @@ for phpVersion in ${installedPhpVersions[*]}; do
     alias "${phpVersion}"="${value}"
 done
 
+# Use the Herd PHP binary
+alias php="herd php"
+alias composer="herd composer"
+
 # rsync shortcut
 function rs() {
   rsync -avz -e ssh $1 $2
 }
-
-# Dump homestead databases
-alias dumpdb="mysqldump -u homestead -psecret --all-databases > ~/code/homestead.sql"
-alias loaddb="mysql -u homestead -psecret < ~/code/homestead.sql"
 
 alias python='python3'
 alias pip='pip3'

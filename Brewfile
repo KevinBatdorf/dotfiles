@@ -27,6 +27,7 @@ brew 'less'
 brew 'monolith' # Backup a complete webpage https://github.com/Y2Z/monolith
 brew 'nvim'
 brew 'nvm' # Node version switcher
+brew 'orbstack' # Docker alternative
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'prettyping' # http://denilson.sa.nom.br/prettyping/
 brew 'pure' # https://github.com/sindresorhus/pure
@@ -64,7 +65,6 @@ brew 'pyenv'
 cask 'blender'
 cask 'cleanshot'
 cask 'discord'
-cask 'docker'
 cask 'firefox'
 cask 'godot'
 cask 'google-chrome'
@@ -84,6 +84,7 @@ cask 'the-unarchiver'
 cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'yaak'
 cask 'zoom'
 
 # Fonts

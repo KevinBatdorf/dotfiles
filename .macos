@@ -159,6 +159,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
     OpenWith -bool true \
     Privileges -bool true
 
+# Enable dots on open apps
+defaults write com.apple.dock show-process-indicators -bool true && killall Dock
+
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 

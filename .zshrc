@@ -101,7 +101,7 @@ esac
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 
 # Add rye to path (python stuffz)
-source "$HOME/.rye/env"
+[ -s "$HOME/.rye/env" ] && source "$HOME/.rye/env"
 
 # bun completions
 [ -s "/Users/kevin/.bun/_bun" ] && source "/Users/kevin/.bun/_bun"
