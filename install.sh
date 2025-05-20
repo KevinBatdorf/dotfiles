@@ -19,6 +19,9 @@ fi
 brew update
 brew bundle
 
+# INstall the copilot cli extension
+gh extension install github/gh-copilot
+
 # Make ZSH the default shell environment
 sudo dscl . -create /Users/$USER UserShell "$(brew --prefix)/bin/zsh"
 

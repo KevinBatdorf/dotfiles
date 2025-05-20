@@ -11,6 +11,7 @@ function lg() {
 }
 
 alias nah="git reset --hard && git clean -df"
+ghe() { gh copilot explain "$*"; }
 
 # Completion for the `wp` command
 _wp_complete() {
